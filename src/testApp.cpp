@@ -275,7 +275,7 @@ void testApp::keyPressed  (int key){
 			mode = "ALight";
 			pAMenuBtn[2]->setOver();
 		} 
-	} else if(key == 's') {
+	} else if(key == 's') {//aa
 		
 	} else if(key == 'i') {
 		if(mode == "active" || mode == "passive" || mode == "renewable") {

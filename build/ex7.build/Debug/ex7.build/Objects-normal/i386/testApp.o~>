@@ -1,0 +1,159 @@
+In file included from /Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:1:
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:6:24: error: ofxTweener.h: No such file or directory
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:7:30: error: ofxImageSequence.h: No such file or directory
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:8:28: error: ofxImageHolder.h: No such file or directory
+In file included from /Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:1:
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:49: error: 'ofxImageHolder' does not name a type
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:50: error: 'ofxImageHolder' does not name a type
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:52: error: 'ofxImageHolder' does not name a type
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:53: error: 'ofxImageHolder' does not name a type
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:55: error: 'ofxImageHolder' does not name a type
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:56: error: 'ofxImageHolder' does not name a type
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:58: error: 'ofxImageHolder' does not name a type
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:59: error: 'ofxImageHolder' does not name a type
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:61: error: 'ofxImageHolder' does not name a type
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:63: error: 'ofxImageHolder' does not name a type
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:64: error: 'ofxImageHolder' does not name a type
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:66: error: 'ofxImageHolder' does not name a type
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:67: error: 'ofxImageHolder' does not name a type
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:69: error: 'ofxImageHolder' does not name a type
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:70: error: 'ofxImageHolder' does not name a type
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:72: error: 'ofxImageHolder' does not name a type
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:75: error: 'ofxImageSequence' does not name a type
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:83: error: 'ofxImageHolder' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:83: error: template argument 1 is invalid
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:83: error: template argument 2 is invalid
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:84: error: 'ofxImageHolder' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:84: error: template argument 1 is invalid
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:84: error: template argument 2 is invalid
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:85: error: 'ofxImageHolder' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:85: error: template argument 1 is invalid
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.h:85: error: template argument 2 is invalid
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp: In member function 'virtual void testApp::setup()':
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:16: error: 'backBtn' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:19: error: 'nextBtn' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:23: error: 'passiveInL' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:26: error: 'passiveInR' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:30: error: 'activeInL' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:33: error: 'activeInR' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:37: error: 'renewInL' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:40: error: 'renewInR' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:43: error: request for member 'push_back' in '((testApp*)this)->testApp::menuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:44: error: request for member 'push_back' in '((testApp*)this)->testApp::menuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:45: error: request for member 'push_back' in '((testApp*)this)->testApp::menuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:46: error: request for member 'push_back' in '((testApp*)this)->testApp::menuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:47: error: request for member 'push_back' in '((testApp*)this)->testApp::menuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:48: error: request for member 'push_back' in '((testApp*)this)->testApp::menuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:52: error: 'ventilationInL' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:55: error: 'ventilationInR' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:59: error: 'solarInL' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:62: error: 'solarInR' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:66: error: 'lightInL' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:69: error: 'lightInR' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:72: error: request for member 'push_back' in '((testApp*)this)->testApp::pAMenuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:73: error: request for member 'push_back' in '((testApp*)this)->testApp::pAMenuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:74: error: request for member 'push_back' in '((testApp*)this)->testApp::pAMenuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:75: error: request for member 'push_back' in '((testApp*)this)->testApp::pAMenuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:76: error: request for member 'push_back' in '((testApp*)this)->testApp::pAMenuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:77: error: request for member 'push_back' in '((testApp*)this)->testApp::pAMenuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:80: error: 'earthCoolingBtn' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:83: error: request for member 'push_back' in '((testApp*)this)->testApp::pVMenuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:85: error: 'tmpCase' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp: In member function 'virtual void testApp::update()':
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:106: error: 'Tweener' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp: In member function 'virtual void testApp::draw()':
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:115: error: 'tmpCase' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:122: error: request for member 'size' in '((testApp*)this)->testApp::menuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:123: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:124: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:125: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:126: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:129: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:138: error: request for member 'size' in '((testApp*)this)->testApp::pAMenuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:139: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:140: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:141: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:142: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:145: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:146: error: 'backBtn' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:161: error: request for member 'size' in '((testApp*)this)->testApp::pVMenuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:162: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:163: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:164: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:164: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:165: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:170: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:171: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:172: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:173: error: 'backBtn' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:175: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:185: error: 'backBtn' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:198: error: 'nextBtn' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp: In member function 'virtual void testApp::keyPressed(int)':
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:214: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:216: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:219: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:224: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:227: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:230: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:235: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:238: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:241: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:246: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:248: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:251: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:253: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:254: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:259: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:262: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:265: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:270: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:273: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:276: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:282: error: 'backBtn' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp: In member function 'void testApp::showMenu()':
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:340: error: request for member 'size' in '((testApp*)this)->testApp::menuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:341: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp: In member function 'void testApp::showPassiveAndActiveSubMenu(std::string)':
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:347: error: request for member 'size' in '((testApp*)this)->testApp::pAMenuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:348: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:349: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp: In member function 'void testApp::showPVMenu()':
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:357: error: request for member 'size' in '((testApp*)this)->testApp::pVMenuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:358: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:359: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp: In member function 'void testApp::showBackBtn()':
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:365: error: 'backBtn' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp: In member function 'void testApp::showNextBtn()':
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:370: error: 'nextBtn' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp: In member function 'void testApp::hidePVMenu(std::string)':
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:377: error: request for member 'size' in '((testApp*)this)->testApp::pVMenuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:378: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp: In member function 'void testApp::hidePassiveAndActiveSubMenu()':
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:384: error: request for member 'size' in '((testApp*)this)->testApp::pAMenuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:385: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp: In member function 'void testApp::hideMenu()':
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:391: error: request for member 'size' in '((testApp*)this)->testApp::menuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:392: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp: In member function 'void testApp::hideBackBtn()':
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:397: error: 'backBtn' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp: In member function 'void testApp::hideNextBtn()':
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:401: error: 'nextBtn' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp: In member function 'void testApp::resetBtn()':
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:407: error: 'backBtn' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:408: error: 'nextBtn' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:409: error: request for member 'size' in '((testApp*)this)->testApp::menuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:410: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:412: error: request for member 'size' in '((testApp*)this)->testApp::pAMenuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:413: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:415: error: request for member 'size' in '((testApp*)this)->testApp::pVMenuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:416: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp: In member function 'void testApp::resetAll()':
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:424: error: 'backBtn' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:425: error: 'nextBtn' was not declared in this scope
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:426: error: request for member 'size' in '((testApp*)this)->testApp::menuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:427: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:429: error: request for member 'size' in '((testApp*)this)->testApp::pAMenuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:430: error: invalid types 'int[int]' for array subscript
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:432: error: request for member 'size' in '((testApp*)this)->testApp::pVMenuBtn', which is of non-class type 'int'
+/Users/basara/Desktop/of_preRelease_v007_osx/apps/basara/ex7/src/testApp.cpp:433: error: invalid types 'int[int]' for array subscript

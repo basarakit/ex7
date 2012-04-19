@@ -45,7 +45,7 @@
 		fRef = E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */;
 		name = "testApp.cpp: 413";
 		rLen = 0;
-		rLoc = 12108;
+		rLoc = 12112;
 		rType = 0;
 		vrLen = 672;
 		vrLoc = 12145;
@@ -55,7 +55,7 @@
 		fRef = E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */;
 		name = "testApp.cpp: 293";
 		rLen = 0;
-		rLoc = 10070;
+		rLoc = 10074;
 		rType = 0;
 		vrLen = 800;
 		vrLoc = 9277;
@@ -374,7 +374,7 @@
 		fRef = E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */;
 		name = "testApp.cpp: 293";
 		rLen = 0;
-		rLoc = 10070;
+		rLoc = 10074;
 		rType = 0;
 		vrLen = 825;
 		vrLoc = 9254;
@@ -384,9 +384,19 @@
 		fRef = E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */;
 		name = "testApp.cpp: 293";
 		rLen = 0;
-		rLoc = 10070;
+		rLoc = 10074;
 		rType = 0;
 		vrLen = 825;
+		vrLoc = 9254;
+	};
+	58FF87E7153FE5800032511B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */;
+		name = "testApp.cpp: 278";
+		rLen = 0;
+		rLoc = 9799;
+		rType = 0;
+		vrLen = 829;
 		vrLoc = 9254;
 	};
 	E4B69B4C0A3A1720003C02F2 /* Project object */ = {
@@ -522,6 +532,7 @@
 			58E4A5471521BFD8006114B8 = 58E4A5471521BFD8006114B8 /* PBXTextBookmark */;
 			58FF87C4153FDDFB0032511B /* PBXTextBookmark */ = 58FF87C4153FDDFB0032511B /* PBXTextBookmark */;
 			58FF87E6153FE1320032511B /* PBXTextBookmark */ = 58FF87E6153FE1320032511B /* PBXTextBookmark */;
+			58FF87E7153FE5800032511B /* PBXTextBookmark */ = 58FF87E7153FE5800032511B /* PBXTextBookmark */;
 		};
 		sourceControlManager = 580CE00214F3C5BD00D081C1 /* Source Control */;
 		userBuildSettings = {
@@ -543,8 +554,8 @@
 	E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {978, 6500}}";
-			sepNavSelRange = "{10070, 0}";
-			sepNavVisRange = "{9254, 825}";
+			sepNavSelRange = "{9799, 0}";
+			sepNavVisRange = "{9254, 829}";
 			sepNavWindowFrame = "{{233, 4}, {920, 746}}";
 		};
 	};
