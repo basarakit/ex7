@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -273,7 +275,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
+									<integer>6</integer>
 									<integer>3</integer>
 									<integer>0</integer>
 								</array>
@@ -309,14 +311,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>testApp.cpp</string>
+								<string>testApp.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -324,11 +324,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>testApp.cpp</string>
+										<string>testApp.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>58F15CDB1541704000082C61</string>
+										<string>58F15CF815417E2700082C61</string>
 										<key>history</key>
 										<array>
 											<string>58E4A5471521BFD8006114B8</string>
@@ -345,11 +345,11 @@
 											<string>58F15C7415415C0A00082C61</string>
 											<string>58F15C9915416C8D00082C61</string>
 											<string>58F15CAF15416E3200082C61</string>
-											<string>58F15CB015416E3200082C61</string>
 											<string>58F15CB115416E3200082C61</string>
 											<string>58F15CB215416E3200082C61</string>
-											<string>58F15CB315416E3200082C61</string>
-											<string>58F15CB415416E3200082C61</string>
+											<string>58F15CDC154176CE00082C61</string>
+											<string>58F15CF615417E2700082C61</string>
+											<string>58F15CF715417E2700082C61</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

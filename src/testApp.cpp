@@ -21,6 +21,9 @@ void testApp::setup(){
 	button6.set(666, 487); //right lower one
 	button7.set(666, 55);// right uppest one for back and next only
 	
+	casePos.set(110, 0);
+	caseUPos.set(0, 0);
+	
 	//image init
 	
 	//back and next button
@@ -103,13 +106,68 @@ void testApp::setup(){
 
 	background.loadImage("bgTmp.png");
 
-	earth.load("case/passive/ventilation/earth/AnimationA2_A_S_active_skylight.mov", 110, 0, "pVEarth");
-	layout.load("case/passive/ventilation/layout/AnimationA2_A_S_active_skylight.mov", 110, 0, "pVLayout");
-	wind.load("case/passive/ventilation/wind/AnimationA2_A_S_active_skylight.mov", 110, 0, "pVWind");
+	//passive ventilation case-------------------------
+	
+	earth.load("case/passive/ventilation/earth/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pVEarth");
+	layout.load("case/passive/ventilation/layout/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pVLayout");
+	wind.load("case/passive/ventilation/wind/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pVWind");
 	
 	pVCase.push_back(&earth);
 	pVCase.push_back(&layout);
 	pVCase.push_back(&wind);
+	
+	earthU.load("case/passive/ventilation/earth/AnimationA2_A_S_active_skylight.mov", caseUPos.x, caseUPos.y, "pVEarth");
+	layoutU.load("case/passive/ventilation/layout/AnimationA2_A_S_active_skylight.mov", caseUPos.x, caseUPos.y, "pVLayout");
+	windU.load("case/passive/ventilation/wind/AnimationA2_A_S_active_skylight.mov", caseUPos.x, caseUPos.y, "pVWind");
+	
+	pVCaseU.push_back(&earthU);
+	pVCaseU.push_back(&layoutU);
+	pVCaseU.push_back(&windU);
+	
+	//--------------------------------------------------
+	
+	//passive light case-------------------------
+	
+	pipe.load("case/passive/light/lightPipe/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pLpipe");
+	shelf.load("case/passive/light/lightShelf/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pLshelf");
+	north.load("case/passive/light/northGlazing/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pLNorth");
+	
+	pLCase.push_back(&pipe);
+	pLCase.push_back(&shelf);
+	pLCase.push_back(&north);
+	
+	pipeU.load("case/passive/light/lightPipe/AnimationA2_A_S_active_skylight.mov", caseUPos.x, caseUPos.y, "pLpipeU");
+	shelfU.load("case/passive/light/lightShelf/AnimationA2_A_S_active_skylight.mov", caseUPos.x, caseUPos.y, "pLshelfU");
+	northU.load("case/passive/light/northGlazing/AnimationA2_A_S_active_skylight.mov", caseUPos.x, caseUPos.y, "pLNorthU");
+	
+	pLCaseU.push_back(&pipeU);
+	pLCaseU.push_back(&shelfU);
+	pLCaseU.push_back(&northU);
+	
+	//--------------------------------------------------
+	
+	//passive solar case-------------------------
+	
+	pipe.load("case/passive/solar/lightPipe/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pLpipe");
+	shelf.load("case/passive/solar/lightShelf/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pLshelf");
+	north.load("case/passive/solar/northGlazing/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pLNorth");
+	north.load("case/passive/solar/northGlazing/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pLNorth");
+	
+	pSCase.push_back(&pipe);
+	pSCase.push_back(&shelf);
+	pSCase.push_back(&north);
+	pSCase.push_back(&);
+	
+	pipeU.load("case/passive/light/lightPipe/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pLpipeU");
+	shelfU.load("case/passive/light/lightShelf/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pLshelfU");
+	northU.load("case/passive/light/northGlazing/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pLNorthU");
+	
+	pLCaseU.push_back(&pipeU);
+	pLCaseU.push_back(&shelfU);
+	pLCaseU.push_back(&northU);
+	
+	//--------------------------------------------------
+	
 	
 	//ard.connect("/dev/tty.usbmodem411", 57600);
 	

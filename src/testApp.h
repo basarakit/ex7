@@ -9,7 +9,7 @@
 #include "ofxVideoHolder.h"
 
 class testApp : public ofBaseApp{
-	
+
 	public:
 		
 		void setup();
@@ -42,7 +42,6 @@ class testApp : public ofBaseApp{
 		void setupArduino(const int & version);
 		void updateArduino();
 	
-	
 	ofImage background;
 	
 	string mode;
@@ -59,8 +58,6 @@ class testApp : public ofBaseApp{
 	ofxImageHolder passiveInL;
 	ofxImageHolder passiveInR;
 	
-	ofxImageHolder tmpCase;
-	
 	ofxImageHolder ventilationInL;
 	ofxImageHolder ventilationInR;
 	
@@ -70,22 +67,72 @@ class testApp : public ofBaseApp{
 	ofxImageHolder lightInL;
 	ofxImageHolder lightInR;
 	
-	ofxImageHolder earthCoolingBtn;
-	ofxImageHolder windCatcherBtn;
-	ofxImageHolder ventilationLayoutBtn;
+	//intro video
+	ofxVideoHolder introVideo;
+	
+	//passive ventilation 
+	ofxImageHolder earthCoolingBtn, windCatcherBtn, ventilationLayoutBtn;
+	
+	//passive light
+	ofxImageHolder lightPipeBtn, lightShelfBtn, northGlazingBtn;
+	
+	//passive solar
+	ofxImageHolder externalShadingBtn, roofBtn, shadeBtn, windowBtn;
+	
+	//actve ventilation
+	ofxImageHolder fanBtn, hvacBtn;
+	
+	//active light
+	ofxImageHolder sensorBtn, taskLightingBtn;
+	
+	//active solar
+	ofxImageHolder skylightBtn;
+	
+	//renewable
+	ofxImageHolder bioBtn, photovoltaicBtn, thermalBtn;
 	
 	//case movie
-	ofxVideoHolder layout;//passive ventilation layout
-	ofxVideoHolder wind;//passive ventilation wind catcher
-	ofxVideoHolder earth;//passive ventilation earth cooling
+	//passive ventilation
+	ofxVideoHolder earth, wind, layout;
+	ofxVideoHolder earthU, windU, layoutU;
 	
-	ofxImageSequence returnInR;
+	//passive light
+	ofxVideoHolder pipe, shelf, north;
+	ofxVideoHolder pipeU, shelfU, northU;
+	
+	//passive solar
+	ofxVideoHolder external, roof, shade, window;
+	ofxVideoHolder externalU, roofU, shadeU, windowU;
+	
+	//active ventilation
+	ofxVideoHolder fan, hvac;
+	ofxVideoHolder fanU, hvacU;
+	
+	//active light
+	ofxVideoHolder sensor, taskLighting;
+	ofxVideoHolder sensorU, taskLightingU;
+	
+	//active solar
+	ofxVideoHolder skylight;
+	ofxVideoHolder skylightU;
+	
+	//renewable
+	ofxVideoHolder bio, photovoltaic, thermal;
+	ofxVideoHolder bioU, photovoltaicU, thermalU;
 	
 	vector<ofxImageHolder*> menuBtn;
 	vector<ofxImageHolder*> pAMenuBtn;//passive and active menu button
 	vector<ofxImageHolder*> pVMenuBtn;//passive ventilation menu button
 	
-	vector<ofxVideoHolder*> pVCase;
+	vector<ofxVideoHolder*> pVCase, pVCaseU;
+	vector<ofxVideoHolder*> pSCase, pSCaseU;
+	vector<ofxVideoHolder*> pLCase, pLCaseU;
+	
+	vector<ofxVideoHolder*> aVCase, aVCaseU;
+	vector<ofxVideoHolder*> aSCase, aSCaseU;
+	vector<ofxVideoHolder*> aLCase, aLCaseU;
+	
+	vector<ofxVideoHolder*> renewCase, renewCaseU;
 	
 	ofArduino	ard;
 	bool		bSetupArduino;			// flag variable for setting up arduino once
@@ -94,8 +141,9 @@ class testApp : public ofBaseApp{
 	bool menuBtnPressed;
 	bool backBtnPressed;
 	bool nextBtnPressed;
-		
+
 	ofVec2f button1, button2, button3, button4, button5, button6, button7;
+	ofVec2f casePos, caseUPos;
 };
 
 #endif
