@@ -153,6 +153,7 @@ void ofxImageHolder::hideSeq() {
 void ofxImageHolder::setOver() {
 	pressed = true;
 	over = true;
+	glow.resetFrame();
 }
 
 void ofxImageHolder::setRev(bool r) {
@@ -163,10 +164,9 @@ void ofxImageHolder::setRev(bool r) {
 void ofxImageHolder::setPressed(bool p) { pressed = p; }
 
 void ofxImageHolder::reset() {
-	seq.reset();
 	seq.resetFrame();
-	glow.reset();
 	glow.resetFrame();
+	setPressed(false);
 	show = false;
 	over = false;
 	rev = false;

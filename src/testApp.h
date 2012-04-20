@@ -6,6 +6,7 @@
 #include "ofxTweener.h"
 #include "ofxImageSequence.h"
 #include "ofxImageHolder.h"
+#include "ofxVideoHolder.h"
 
 class testApp : public ofBaseApp{
 	
@@ -70,19 +71,31 @@ class testApp : public ofBaseApp{
 	ofxImageHolder lightInR;
 	
 	ofxImageHolder earthCoolingBtn;
+	ofxImageHolder windCatcherBtn;
+	ofxImageHolder ventilationLayoutBtn;
 	
+	//case movie
+	ofxVideoHolder layout;//passive ventilation layout
+	ofxVideoHolder wind;//passive ventilation wind catcher
+	ofxVideoHolder earth;//passive ventilation earth cooling
 	
 	ofxImageSequence returnInR;
+	
+	vector<ofxImageHolder*> menuBtn;
+	vector<ofxImageHolder*> pAMenuBtn;//passive and active menu button
+	vector<ofxImageHolder*> pVMenuBtn;//passive ventilation menu button
+	
+	vector<ofxVideoHolder*> pVCase;
 	
 	ofArduino	ard;
 	bool		bSetupArduino;			// flag variable for setting up arduino once
 	
-	protected:
-		bool menuPressed;
-		bool menuBtnPressed;
-		vector<ofxImageHolder*> menuBtn;
-		vector<ofxImageHolder*> pAMenuBtn;//passive and active menu button
-		vector<ofxImageHolder*> pVMenuBtn;//passive ventilation menu button
+	bool menuPressed;
+	bool menuBtnPressed;
+	bool backBtnPressed;
+	bool nextBtnPressed;
+		
+	ofVec2f button1, button2, button3, button4, button5, button6, button7;
 };
 
 #endif
