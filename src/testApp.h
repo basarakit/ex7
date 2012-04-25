@@ -29,15 +29,22 @@ class testApp : public ofBaseApp{
 		void showMenu();// the root menu
 		void showPassiveAndActiveSubMenu(string name);// the passive and active sub menu
 		void showPVMenu();
+		void showPLMenu();
+		void showPSMenu();
 		void showBackBtn();
 		void showNextBtn();
 		void hidePassiveAndActiveSubMenu();
 		void hideMenu();// hide the root menu
 		void hidePVMenu(string name);//can hide menu by name
+		void hidePLMenu(string name);
+		void hidePSMenu(string name);
 		void hideBackBtn();
 		void hideNextBtn();
 		void resetBtn();
 		void resetAll();
+	
+		//case menu render function
+		void menuRender(vector<ofxImageHolder*> btn, vector<ofxVideoHolder*> movie, vector<ofxVideoHolder*> movieU, string m);
 		
 		void setupArduino(const int & version);
 		void updateArduino();
@@ -122,15 +129,24 @@ class testApp : public ofBaseApp{
 	
 	vector<ofxImageHolder*> menuBtn;
 	vector<ofxImageHolder*> pAMenuBtn;//passive and active menu button
+	
 	vector<ofxImageHolder*> pVMenuBtn;//passive ventilation menu button
+	vector<ofxImageHolder*> pLMenuBtn;//passive light menu button
+	vector<ofxImageHolder*> pSMenuBtn;//passive solar menu button
+	
+	vector<ofxImageHolder*> aVMenuBtn;//active ventilation menu button
+	vector<ofxImageHolder*> aLMenuBtn;//active light menu button
+	vector<ofxImageHolder*> aSMenuBtn;//active solar menu button
+	
+	vector<ofxImageHolder*> renewMenuBtn;
 	
 	vector<ofxVideoHolder*> pVCase, pVCaseU;
-	vector<ofxVideoHolder*> pSCase, pSCaseU;
 	vector<ofxVideoHolder*> pLCase, pLCaseU;
+	vector<ofxVideoHolder*> pSCase, pSCaseU;
 	
 	vector<ofxVideoHolder*> aVCase, aVCaseU;
-	vector<ofxVideoHolder*> aSCase, aSCaseU;
 	vector<ofxVideoHolder*> aLCase, aLCaseU;
+	vector<ofxVideoHolder*> aSCase, aSCaseU;
 	
 	vector<ofxVideoHolder*> renewCase, renewCaseU;
 	

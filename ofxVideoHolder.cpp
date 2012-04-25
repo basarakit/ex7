@@ -65,5 +65,6 @@ bool ofxVideoHolder::isShow() {
 void ofxVideoHolder::reset()
 {
 	show = false;
+	caseVideo.stop();
 	
 }
