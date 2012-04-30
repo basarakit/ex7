@@ -50,6 +50,7 @@ ofxImageHolder::ofxImageHolder() {
 	rev = false;
 	pressed = false;
 	playSubLoop = false;
+	isNext = false;
 }
 
 ofxImageHolder::~ofxImageHolder() {
@@ -130,7 +131,8 @@ void ofxImageHolder::playGlow(bool loop) {
 			} else {
 				over = false;
 				seq.reset();
-				rev = true;
+				if(isNext == false) rev = true;
+				else rev = false;
 			}
 		}
 	}
@@ -150,7 +152,8 @@ void ofxImageHolder::hideSeq() {
 	seq.reset();
 }
 
-void ofxImageHolder::setOver() {
+void ofxImageHolder::setOver(bool r) {
+	isNext = r;
 	pressed = true;
 	over = true;
 	glow.resetFrame();

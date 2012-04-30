@@ -68,7 +68,7 @@ public:
 	void showSeq();//show the sequence
 	void hideSeq();//hide the sequence
 	void setRev(bool r=true);//set reverse
-	void setOver();//button touched
+	void setOver(bool r=false);//button touched
 	void setPlaySubLoop();//play the sub loop
 	void setPressed(bool p);
 	bool isPlaySubLoop();//return play sub loop state
@@ -85,6 +85,7 @@ protected:
 	ofxImageSequence glow;
 	
 	bool rev;
+	bool isNext;
 	bool over;
 	bool show;
 	bool playSubLoop;

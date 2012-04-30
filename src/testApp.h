@@ -27,12 +27,13 @@ class testApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 	
 		void showMenu();// the root menu
-		void showPassiveAndActiveSubMenu(string name);// the passive and active sub menu
-		void showPVMenu();
+		void showPassiveAndActiveSubMenu(string name="all");// the passive and active sub menu
+		void showPVMenu(string name="all");
 		void showPLMenu();
 		void showPSMenu();
 		void showBackBtn();
 		void showNextBtn();
+	
 		void hidePassiveAndActiveSubMenu();
 		void hideMenu();// hide the root menu
 		void hidePVMenu(string name);//can hide menu by name
@@ -41,7 +42,11 @@ class testApp : public ofBaseApp{
 		void hideBackBtn();
 		void hideNextBtn();
 		void resetBtn();
+		void resetCase();
 		void resetAll();
+	
+		//next case function
+		void nextCase(vector<ofxImageHolder*> btn, vector<ofxVideoHolder*> movie, vector<ofxVideoHolder*> movieU, string m, int s, int d);
 	
 		//case menu render function
 		void menuRender(vector<ofxImageHolder*> btn, vector<ofxVideoHolder*> movie, vector<ofxVideoHolder*> movieU, string m);
@@ -108,24 +113,24 @@ class testApp : public ofBaseApp{
 	ofxVideoHolder pipeU, shelfU, northU;
 	
 	//passive solar
-	ofxVideoHolder external, roof, shade, window;
-	ofxVideoHolder externalU, roofU, shadeU, windowU;
+	ofxVideoHolder external, roof, shade, glazing;
+	ofxVideoHolder externalU, roofU, shadeU, glazingU;
 	
 	//active ventilation
 	ofxVideoHolder fan, hvac;
 	ofxVideoHolder fanU, hvacU;
 	
 	//active light
-	ofxVideoHolder sensor, taskLighting;
-	ofxVideoHolder sensorU, taskLightingU;
+	ofxVideoHolder management;
+	ofxVideoHolder managementU;
 	
 	//active solar
 	ofxVideoHolder skylight;
 	ofxVideoHolder skylightU;
 	
 	//renewable
-	ofxVideoHolder bio, photovoltaic, thermal;
-	ofxVideoHolder bioU, photovoltaicU, thermalU;
+	ofxVideoHolder bio, photovoltaic;
+	ofxVideoHolder bioU, photovoltaicU;
 	
 	vector<ofxImageHolder*> menuBtn;
 	vector<ofxImageHolder*> pAMenuBtn;//passive and active menu button
@@ -157,6 +162,10 @@ class testApp : public ofBaseApp{
 	bool menuBtnPressed;
 	bool backBtnPressed;
 	bool nextBtnPressed;
+	bool nextBtnPressing;
+	bool backToCaseMenu;
+	
+	float pressingTime;
 
 	ofVec2f button1, button2, button3, button4, button5, button6, button7;
 	ofVec2f casePos, caseUPos;

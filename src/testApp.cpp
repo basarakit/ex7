@@ -13,6 +13,10 @@ void testApp::setup(){
 	menuBtnPressed = false;
 	backBtnPressed = false;
 	nextBtnPressed = false;
+	nextBtnPressing = false;
+	backToCaseMenu = false;
+	
+	pressingTime = 0;
 	
 	//button position
 	button1.set(204, 202); //left upper one
@@ -92,13 +96,13 @@ void testApp::setup(){
 	pAMenuBtn.push_back(&lightInR);
 	
 	//passive ventilation button
-	earthCoolingBtn.load("icon/passive/ventilation/earthcooling/earth_cooling_button_", "png", 0, 14, 5, button1.x, button1.y, "earthCooling");
+	earthCoolingBtn.load("icon/passive/ventilation/earthcooling/earth_cooling_button_", "png", 0, 14, 5, button1.x, button1.y, "pVEarth");
 	earthCoolingBtn.loadGlow("icon/passive/ventilation/earthcooling/touch/earth_cooling_button_touch_effect_", "png", 15, 29, 5);
 	
-	windCatcherBtn.load("icon/passive/ventilation/wind/ventilation_button_right_", "png", 0, 14, 5, button5.x, button5.y, "windCatcher");
+	windCatcherBtn.load("icon/passive/ventilation/wind/ventilation_button_right_", "png", 0, 14, 5, button5.x, button5.y, "pVWind");
 	windCatcherBtn.loadGlow("icon/passive/ventilation/wind/touch/ventilation_button_right_touch_effect_", "png", 15, 29, 5);
 	
-	ventilationLayoutBtn.load("icon/passive/ventilation/layout/ventilation_button_right_", "png", 0, 14, 5, button6.x, button6.y, "ventilationLayout");
+	ventilationLayoutBtn.load("icon/passive/ventilation/layout/ventilation_button_right_", "png", 0, 14, 5, button6.x, button6.y, "pVLayout");
 	ventilationLayoutBtn.loadGlow("icon/passive/ventilation/layout/touch/ventilation_button_right_touch_effect_", "png", 15, 29, 5);
 	
 	pVMenuBtn.push_back(&earthCoolingBtn);
@@ -108,13 +112,13 @@ void testApp::setup(){
 	//------------------------------------------------
 	
 	//passive light button
-	lightPipeBtn.load("icon/passive/light/lightPipe/earth_cooling_button_", "png", 0, 14, 5, button1.x, button1.y, "lightPipe");
+	lightPipeBtn.load("icon/passive/light/lightPipe/earth_cooling_button_", "png", 0, 14, 5, button1.x, button1.y, "pLPipe");
 	lightPipeBtn.loadGlow("icon/passive/light/lightPipe/touch/earth_cooling_button_touch_effect_", "png", 15, 29, 5);
 	
-	lightShelfBtn.load("icon/passive/light/lightShelf/earth_cooling_button_", "png", 0, 14, 5, button5.x, button5.y, "lightShelf");
+	lightShelfBtn.load("icon/passive/light/lightShelf/earth_cooling_button_", "png", 0, 14, 5, button5.x, button5.y, "pLShelf");
 	lightShelfBtn.loadGlow("icon/passive/light/lightShelf/touch/earth_cooling_button_touch_effect_", "png", 15, 29, 5);
 	
-	northGlazingBtn.load("icon/passive/light/northGlazing/earth_cooling_button_", "png", 0, 14, 5, button6.x, button6.y, "northGlazing");
+	northGlazingBtn.load("icon/passive/light/northGlazing/earth_cooling_button_", "png", 0, 14, 5, button6.x, button6.y, "pLNorth");
 	northGlazingBtn.loadGlow("icon/passive/light/northGlazing/touch/earth_cooling_button_touch_effect_", "png", 15, 29, 5);
 	
 	pLMenuBtn.push_back(&lightPipeBtn);
@@ -124,16 +128,16 @@ void testApp::setup(){
 	//------------------------------------------------
 	
 	//passive solar button
-	externalShadingBtn.load("icon/passive/solar/externalShading/earth_cooling_button_", "png", 0, 14, 5, button1.x, button1.y, "externalShading");
+	externalShadingBtn.load("icon/passive/solar/externalShading/earth_cooling_button_", "png", 0, 14, 5, button1.x, button1.y, "pSExternal");
 	externalShadingBtn.loadGlow("icon/passive/solar/externalShading/touch/earth_cooling_button_touch_effect_", "png", 15, 29, 5);
 	
-	roofBtn.load("icon/passive/solar/roof/earth_cooling_button_", "png", 0, 14, 5, button5.x, button5.y, "roof");
+	roofBtn.load("icon/passive/solar/roof/earth_cooling_button_", "png", 0, 14, 5, button5.x, button5.y, "pSRoof");
 	roofBtn.loadGlow("icon/passive/solar/roof/touch/earth_cooling_button_touch_effect_", "png", 15, 29, 5);
 	
-	shadeBtn.load("icon/passive/solar/shade/earth_cooling_button_", "png", 0, 14, 5, button6.x, button6.y, "shade");
+	shadeBtn.load("icon/passive/solar/shade/earth_cooling_button_", "png", 0, 14, 5, button6.x, button6.y, "pSShade");
 	shadeBtn.loadGlow("icon/passive/solar/shade/touch/earth_cooling_button_touch_effect_", "png", 15, 29, 5);
 	
-	windowBtn.load("icon/passive/solar/window/earth_cooling_button_", "png", 0, 14, 5, button2.x, button2.y, "window");
+	windowBtn.load("icon/passive/solar/window/earth_cooling_button_", "png", 0, 14, 5, button2.x, button2.y, "pSWindow");
 	windowBtn.loadGlow("icon/passive/solar/window/touch/earth_cooling_button_touch_effect_", "png", 15, 29, 5);
 	
 	pSMenuBtn.push_back(&externalShadingBtn);
@@ -147,17 +151,17 @@ void testApp::setup(){
 
 	//passive ventilation case-------------------------
 	
-	earth.load("case/passive/ventilation/earth/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pVEarth");
-	layout.load("case/passive/ventilation/layout/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pVLayout");
-	wind.load("case/passive/ventilation/wind/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pVWind");
+	earth.load("case/passive/ventilation/earth/AnimationA2_P_V_Earth_Cooling.mov", casePos.x, casePos.y, "pVEarth");
+	layout.load("case/passive/ventilation/layout/AnimationA2_P_V_ventilated_layout.mov", casePos.x, casePos.y, "pVLayout");
+	wind.load("case/passive/ventilation/wind/AnimationA2_P_V_wind_catcher.mov", casePos.x, casePos.y, "pVWind");
 	
 	pVCase.push_back(&earth);
 	pVCase.push_back(&layout);
 	pVCase.push_back(&wind);
 	
-	earthU.load("case/passive/ventilation/earth/AnimationA2_A_S_active_skylight.mov", caseUPos.x, caseUPos.y, "pVEarthU");
-	layoutU.load("case/passive/ventilation/layout/AnimationA2_A_S_active_skylight.mov", caseUPos.x, caseUPos.y, "pVLayoutU");
-	windU.load("case/passive/ventilation/wind/AnimationA2_A_S_active_skylight.mov", caseUPos.x, caseUPos.y, "pVWindU");
+	earthU.load("case/passive/ventilation/earth/AnimationB_P_V_EarthCooling.mov", caseUPos.x, caseUPos.y, "pVEarthU");
+	layoutU.load("case/passive/ventilation/layout/AnimationB_P_V_ventilated_layout.mov", caseUPos.x, caseUPos.y, "pVLayoutU");
+	windU.load("case/passive/ventilation/wind/AnimationB_P_V_wincatcher.mov", caseUPos.x, caseUPos.y, "pVWindU");
 	
 	pVCaseU.push_back(&earthU);
 	pVCaseU.push_back(&layoutU);
@@ -189,37 +193,37 @@ void testApp::setup(){
 	
 	external.load("case/passive/solar/externalShading/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pSExternal");
 	roof.load("case/passive/solar/roof/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pSRoof");
-	shade.load("case/passive/solar/shade/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pSShade");
-	window.load("case/passive/solar/window/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pSWindow");
+	shade.load("case/passive/solar/shade/AnimationA2_P_S_heat_reflecting_shade.mov", casePos.x, casePos.y, "pSShade");
+	glazing.load("case/passive/solar/glazing/AnimationA2_P_S_High_Performance_glazing.mov", casePos.x, casePos.y, "pSGlazing");
 	
 	pSCase.push_back(&external);
 	pSCase.push_back(&roof);
 	pSCase.push_back(&shade);
-	pSCase.push_back(&window);
+	pSCase.push_back(&glazing);
 	
 	externalU.load("case/passive/solar/externalShading/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pSExternalU");
-	roofU.load("case/passive/solar/roof/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pSRoofU");
-	shadeU.load("case/passive/solar/shade/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pSShadeU");
-	windowU.load("case/passive/solar/window/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "pSWindowU");
+	roofU.load("case/passive/solar/roof/AnimationB_P_S_Insulated_Roof.mov", casePos.x, casePos.y, "pSRoofU");
+	shadeU.load("case/passive/solar/shade/AnimationB_P_S_Heat_reflecting_shade.mov", casePos.x, casePos.y, "pSShadeU");
+	glazingU.load("case/passive/solar/glazing/AnimationB_P_S_High_Performance_Glazing.mov", casePos.x, casePos.y, "pSGlazingU");
 	
 	pSCaseU.push_back(&externalU);
 	pSCaseU.push_back(&roofU);
 	pSCaseU.push_back(&shadeU);
-	pSCaseU.push_back(&windowU);
+	pSCaseU.push_back(&glazingU);
 	
 	//--------------------------------------------------
 	
 	
 	//active ventilation case-------------------------
 	
-	fan.load("case/active/ventilation/fan/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "aVFan");
-	hvac.load("case/active/ventilation/hvac/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "aVHVAC");
+	fan.load("case/active/ventilation/fan/AnimationA2_A_V_high_volume_low_speed_fan.mov", casePos.x, casePos.y, "aVFan");
+	hvac.load("case/active/ventilation/hvac/AnimationA2_A_V_HVAC.mov", casePos.x, casePos.y, "aVHVAC");
 
 	aVCase.push_back(&fan);
 	aVCase.push_back(&hvac);
 
-	fanU.load("case/active/ventilation/fan/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "aVFanU");
-	hvacU.load("case/active/ventilation/hvac/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "aVHVACU");
+	fanU.load("case/active/ventilation/fan/AnimationB_A_V_high_volume_low_speed_fan.mov", casePos.x, casePos.y, "aVFanU");
+	hvacU.load("case/active/ventilation/hvac/AnimationB_A_V_HVAC.mov", casePos.x, casePos.y, "aVHVACU");
 	
 	aVCaseU.push_back(&fanU);
 	aVCaseU.push_back(&hvacU);
@@ -228,17 +232,13 @@ void testApp::setup(){
 	
 	//avtive light case-------------------------
 	
-	sensor.load("case/active/light/sensor/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "aLSensoe");
-	taskLighting.load("case/active/light/taskLighting/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "aLTaskLighting");
+	management.load("case/active/light/management/AnimationA2_A_L_Interlligent_Light Management.mov", casePos.x, casePos.y, "aLManagement");
 	
-	aLCase.push_back(&sensor);
-	aLCase.push_back(&taskLighting);
+	aLCase.push_back(&management);
 	
-	sensorU.load("case/active/light/sensor/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "aLSensoeU");
-	taskLightingU.load("case/active/light/taskLighting/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "aLTaskLightingU");
+	managementU.load("case/active/light/management/AnimationA2_A_L_Interlligent_Light Management.mov", casePos.x, casePos.y, "aLManagementU");
 	
-	aLCaseU.push_back(&sensorU);
-	aLCaseU.push_back(&taskLightingU);
+	aLCaseU.push_back(&managementU);
 	
 	//--------------------------------------------------
 	
@@ -257,21 +257,17 @@ void testApp::setup(){
 	
 	//renewable case-------------------------
 	
-	bio.load("case/renewable/bio/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "renewBio");
-	photovoltaic.load("case/renewable/photovoltaic/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "renewPhoto");
-	thermal.load("case/renewable/thermal/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "renewThermal");
+	bio.load("case/renewable/bio/AnimationA2_R_bio_diesel.mov", casePos.x, casePos.y, "renewBio");
+	photovoltaic.load("case/renewable/photovoltaic/AnimationA2_R_Photovoltaic.mov", casePos.x, casePos.y, "renewPhoto");
 	
 	renewCase.push_back(&bio);
 	renewCase.push_back(&photovoltaic);
-	renewCase.push_back(&thermal);
 	
-	bioU.load("case/renewable/bio/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "renewBioU");
-	photovoltaicU.load("case/renewable/photovoltaic/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "renewPhotoU");
-	thermalU.load("case/renewable/thermal/AnimationA2_A_S_active_skylight.mov", casePos.x, casePos.y, "renewThermalU");
+	bioU.load("case/renewable/bio/AnimationB_R_bio_disel.mov", casePos.x, casePos.y, "renewBioU");
+	photovoltaicU.load("case/renewable/photovoltaic/AnimationB_R_Photovoltaic.mov", casePos.x, casePos.y, "renewPhotoU");
 	
 	renewCaseU.push_back(&bioU);
 	renewCaseU.push_back(&photovoltaicU);
-	renewCaseU.push_back(&thermalU);
 	
 	//--------------------------------------------------
 	
@@ -446,74 +442,11 @@ void testApp::draw(){
 	//passive light
 	if(mode == "pL" || mode == "pLPipe" || mode == "pLShelf" || mode == "pLNorth") {
 		menuRender(pLMenuBtn, pLCase, pLCaseU, mode);
-		//for(int i=0;i<pLMenuBtn.size();i++) {
-//			if(pLMenuBtn[i]->isShow() == true) {
-//				if(pLMenuBtn[i]->isRev() == false) {//when one of button start to play
-//					if(menuBtnPressed == true && pLMenuBtn[i]->isPressed() == false) pLMenuBtn[i]->setRev();//set other button play reverse
-//					pLMenuBtn[i]->play(false, false);
-//				} else {//one of button start to play reverse 
-//					if(menuBtnPressed == false) menuBtnPressed = true;
-//					if(backBtnPressed == true) {
-//						if(pLMenuBtn[i]->play(false, true) == true) {
-//							showPassiveAndActiveSubMenu("passive");
-//							backBtn.showSeq();
-//							backBtnPressed = false;
-//							break;
-//						}
-//					} else {
-//						if(pLMenuBtn[i]->isPressed() == true) {//check which one clicked
-//							pLMenuBtn[i]->setRev(false);//keep the pressed button not out
-//							hideBackBtn();
-//							if(pLMenuBtn[i]->play(false, false) == true) {
-//								//case play here
-//								if(mode == "pLPipe") pLCase[0]->showCase();
-//								else if(mode =="pLShelf") pLCase[1]->showCase();
-//								else if(mode =="pLNorth") pLCase[2]->showCase();
-//							}
-//						} else {
-//							pLMenuBtn[i]->play(false, true);
-//						}
-//					}
-//				}
-//			}
-//		}
 	}
 	
 	//passive solar
 	if(mode == "pS" || mode == "pSExternal" || mode == "pSRoof" || mode == "pSShade" || mode == "pSWindow") {
 		menuRender(pSMenuBtn, pSCase, pSCaseU, mode);
-		//for(int i=0;i<pSMenuBtn.size();i++) {
-//			if(pSMenuBtn[i]->isShow() == true) {
-//				if(pSMenuBtn[i]->isRev() == false) {//when one of button start to play
-//					if(menuBtnPressed == true && pSMenuBtn[i]->isPressed() == false) pSMenuBtn[i]->setRev();//set other button play reverse
-//					pSMenuBtn[i]->play(false, false);
-//				} else {//one of button start to play reverse 
-//					if(menuBtnPressed == false) menuBtnPressed = true;
-//					if(backBtnPressed == true) {
-//						if(pSMenuBtn[i]->play(false, true) == true) {
-//							showPassiveAndActiveSubMenu("passive");
-//							backBtn.showSeq();
-//							backBtnPressed = false;
-//							break;
-//						}
-//					} else {
-//						if(pSMenuBtn[i]->isPressed() == true) {//check which one clicked
-//							pSMenuBtn[i]->setRev(false);//keep the pressed button not out
-//							hideBackBtn();
-//							if(pSMenuBtn[i]->play(false, false) == true) {
-//								//case play here
-//								if(mode == "pSExternal") pSCase[0]->showCase();
-//								else if(mode =="pSRoof") pSCase[1]->showCase();
-//								else if(mode =="pSShade") pSCase[2]->showCase();
-//								else if(mode =="pSWindow") pSCase[3]->showCase();
-//							}
-//						} else {
-//							pSMenuBtn[i]->play(false, true);
-//						}
-//					}
-//				}
-//			}
-//		}
 	}
 	
 	//back button show here
@@ -536,6 +469,7 @@ void testApp::draw(){
 					backBtn.setRev(false);
 				}
 			}
+			//into case menu
 			if(backBtn.play(false, true) == true) {
 				if(mode == "pVEarth" || mode == "pVLayout" || mode == "pVWind" || 
 				   mode == "pSExternal" || mode == "pSRoof" || mode == "pSShade" || mode == "pSWindow" ||
@@ -548,48 +482,40 @@ void testApp::draw(){
 	
 	//next button show here
 	if(nextBtn.isShow() == true) {
-		nextBtn.play(false, false);
-		if(nextBtnPressed == true) {
-			nextBtnPressed = false;
-			if (mode == "pVEarth") {
-				mode = "pVLayout";
-				pVCase[0]->reset();
-				pVCaseU[0]->reset();
-				pVMenuBtn[0]->setPressed(false);
-				pVMenuBtn[0]->setRev();
-				pVMenuBtn[2]->reset();
-				pVMenuBtn[2]->setPressed(true);
-				pVMenuBtn[2]->showSeq();
-				//pVCase[2]->showCase();
-			} else if (mode == "pVLayout") {
-				mode = "pVWind";
-				pVCase[2]->reset();
-				pVCaseU[0]->reset();
-				pVMenuBtn[2]->setPressed(false);
-				pVMenuBtn[2]->setRev();
-				pVMenuBtn[1]->reset();
-				pVMenuBtn[1]->setPressed(true);
-				pVMenuBtn[1]->showSeq();
-				//pVCase[1]->showCase();
-			} else if (mode == "pVWind") {
-				mode = "pVEarth";
-				pVCase[1]->reset();
-				pVCaseU[1]->reset();
-				pVMenuBtn[1]->setPressed(false);
-				pVMenuBtn[1]->setRev();
-				pVMenuBtn[0]->reset();
-				pVMenuBtn[0]->setPressed(true);
-				pVMenuBtn[0]->showSeq();
-				//pVCase[0]->showCase();
+		if(nextBtn.isRev() == false) {
+			nextBtn.play(false, false);
+			if(nextBtnPressed == true && backToCaseMenu == false) {
+				nextBtnPressed = false;
+				if (mode == "pVEarth") {
+					nextCase(pVMenuBtn, pVCase, pVCaseU, "pVLayout", 0, 1);
+				} else if (mode == "pVLayout") {
+					nextCase(pVMenuBtn, pVCase, pVCaseU, "pVWind", 1, 2);
+				} else if (mode == "pVWind") {
+					nextCase(pVMenuBtn, pVCase, pVCaseU, "pVEarth", 2, 0);
+				}
+			}
+		} else {//start to play reverse
+			if(backToCaseMenu == true) {
+				backToCaseMenu = false;
+				if(mode == "pVEarth") {
+					showPVMenu(mode);
+				}
+			}
+			if(nextBtn.play(false, true) == true) {
+				nextBtnPressed = false;
+				showBackBtn();
 			}
 		}
 	}
 
 	ofDisableAlphaBlending();
+	
+	ofSetColor(0, 0, 0);
+	ofRect(914, 0, 2, 768);
 }
 
 //--------------------------------------------------------------
-void testApp::keyPressed  (int key){ 
+void testApp::keyReleased  (int key){ 
 	if(key == 'q') {//left renewable button
 		if(mode == "menu") {
 			menuBtn[0]->setOver();
@@ -664,7 +590,9 @@ void testApp::keyPressed  (int key){
 			backBtnPressed = true;
 		}
 		if(nextBtn.isShow()) {
-			nextBtn.setOver();
+			nextBtnPressing = false;
+			if(backToCaseMenu == false) nextBtn.setOver(true);
+			else nextBtn.setOver();
 			nextBtnPressed = true;
 		}
 	} else if(key == 'u') {
@@ -680,7 +608,19 @@ void testApp::keyPressed  (int key){
 }
 
 //--------------------------------------------------------------
-void testApp::keyReleased(int key){ 
+void testApp::keyPressed(int key){
+	if(key == 'i') {
+		if(nextBtn.isShow()) {
+			if(!nextBtnPressing) {
+				nextBtnPressing = true;
+				pressingTime = ofGetElapsedTimef();
+			} else {
+				int tmpTime = ofGetElapsedTimef() - pressingTime;
+				if(tmpTime >= 2.0) backToCaseMenu = true;
+				else backToCaseMenu = false;
+			}
+		}
+	}
 	
 }
 
@@ -719,12 +659,23 @@ void testApp::dragEvent(ofDragInfo dragInfo){
 
 }
 
+void testApp::nextCase(vector<ofxImageHolder*> btn, vector<ofxVideoHolder*> movie, vector<ofxVideoHolder*> movieU, string m, int s, int d) {
+	mode = m;
+	movie[s]->reset();
+	movieU[s]->reset();
+	btn[s]->setPressed(false);
+	btn[s]->setRev();
+	btn[d]->reset();
+	btn[d]->setPressed(true);
+	btn[d]->showSeq();
+}
+
 void testApp::menuRender(vector<ofxImageHolder*> btn, vector<ofxVideoHolder*> movie, vector<ofxVideoHolder*> movieU, string m) {
 	for(int i=0;i<btn.size();i++) {
 		if(btn[i]->isShow() == true) {
 			if(btn[i]->isRev() == false) {//when one of button start to play
 				if(menuBtnPressed == true && btn[i]->isPressed() == false) btn[i]->setRev();//set other button play reverse
-				if(btn[i]->play(false, false) == true && btn[i]->isPressed() == true) {cout<<i<<endl;
+				if(btn[i]->play(false, false) == true && btn[i]->isPressed() == true) {
 					if(movie[i]->isShow() == false) movie[i]->showCase();
 					if(movieU[i]->isShow() == false) movieU[i]->showCase();
 				}
@@ -741,11 +692,12 @@ void testApp::menuRender(vector<ofxImageHolder*> btn, vector<ofxVideoHolder*> mo
 					if(btn[i]->isPressed() == true) {//check which one clicked
 						btn[i]->setRev(false);//keep the pressed button not out
 						hideBackBtn();
-						if(btn[i]->play(false, false) == true) {
-							//case play here
-							movie[i]->showCase();
-							movieU[i]->showCase();
-						}
+						btn[i]->play(false, false);
+						//if(btn[i]->play(false, false) == true) {
+//							//case play here
+//							//movie[i]->showCase();
+//							//movieU[i]->showCase();
+//						}
 					} else {
 						btn[i]->play(false, true);
 					}
@@ -758,6 +710,7 @@ void testApp::menuRender(vector<ofxImageHolder*> btn, vector<ofxVideoHolder*> mo
 void testApp::showMenu() {
 	mode = "menu";
 	resetBtn();
+	resetCase();
 	for(int i=0;i<menuBtn.size();i++) {
 		menuBtn[i]->showSeq();
 	}
@@ -774,14 +727,24 @@ void testApp::showPassiveAndActiveSubMenu(string name) {
 	
 }
 
-void testApp::showPVMenu() {
+void testApp::showPVMenu(string name) {
 	menuBtnPressed = false;
 	mode = "pV";
-	for(int i=0;i<pVMenuBtn.size();i++) {
-		pVMenuBtn[i]->reset();
-		pVMenuBtn[i]->showSeq();
+	for(int i=0;i<pVMenuBtn.size();i++) pVMenuBtn[i]->setPressed(false);
+	if(name == "all") {
+		for(int i=0;i<pVMenuBtn.size();i++) {
+			pVMenuBtn[i]->reset();
+			pVMenuBtn[i]->showSeq();
+		}
+	} else {//check which button do not need play animation
+		for(int i=0;i<pVMenuBtn.size();i++) {
+			if(pVMenuBtn[i]->btnName != name) {
+				pVMenuBtn[i]->reset();
+				pVMenuBtn[i]->showSeq();
+			}
+		}
 	}
-	
+	resetCase();
 }
 
 void testApp::showPLMenu() {
@@ -864,6 +827,7 @@ void testApp::resetBtn() {
 	menuPressed = false;
 	menuBtnPressed = false;
 	backBtnPressed = false;
+	nextBtnPressed = false;
 	backBtn.reset();
 	nextBtn.reset();
 	for(int i=0;i<menuBtn.size();i++) {
@@ -880,6 +844,21 @@ void testApp::resetBtn() {
 	}
 	for(int i=0;i<pSMenuBtn.size();i++) {
 		pSMenuBtn[i]->reset();
+	}
+}
+
+void testApp::resetCase() {
+	for(int i=0;i<pVCase.size();i++) {
+		pVCase[i]->reset();
+		pVCaseU[i]->reset();
+	}
+	for(int i=0;i<pSCase.size();i++) {
+		pSCase[i]->reset();
+		pSCaseU[i]->reset();
+	}
+	for(int i=0;i<pLCase.size();i++) {
+		pLCase[i]->reset();
+		pLCaseU[i]->reset();
 	}
 }
 
